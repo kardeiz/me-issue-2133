@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/mediaelement-and-player.min.js"></script>
+  <script type="text/javascript" src="/assets/mediaelement-and-player.js"></script>
+  <link rel="stylesheet" type="text/css" href="/assets/mediaelementplayer.css">
+  <style>
+    .mejs__overlay-button {
+        background: url("/assets/images/mejs-controls.svg") no-repeat;
+    }
+    .mejs__overlay-loading-bg-img {
+        background: transparent url("/assets/images/mejs-controls.svg") -160px -40px no-repeat;
+    }
+    .mejs__button > button {
+        background: transparent url("/assets/images/mejs-controls.svg") no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <video>
+      <source type="video/mp4" src="https://ia802302.us.archive.org/27/items/Pbtestfilemp4videotestmp4/video_test_512kb.mp4" />
+    </video>
+  </div>
+  <script type="text/javascript">
+    $('video, audio').mediaelementplayer();
+  </script>
+</body>
+</html>
